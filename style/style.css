@@ -1,0 +1,16 @@
+.box {
+  width: 50vw;
+  margin: 4rem auto;
+  padding: 3rem;
+  background-color: rgb(245, 242, 242)
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 2rem
+}
+
+.consultar{
+  margin-top: 2rem;
+  text-align: center;
+}

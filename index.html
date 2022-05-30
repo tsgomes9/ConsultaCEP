@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta de CEP - API</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <div class="box">
+      <form>
+        <h1>Consulta de CEP</h1>
+        <div class="form-group">
+          <label for="cep">CEP</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            maxlength="9"
+            id="cep"
+          />
+          <small>Somente 8 dígitos. Ex: 01311-100</small>
+        </div>
+        <div class="form-group">
+          <label for="logradouro">Logradouro</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="logradouro"
+            readonly
+          />
+        </div>
+        <div class="form-group">
+          <label for="bairro">Bairro</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="bairro"
+            readonly
+          />
+        </div>
+        <div class="form-group">
+          <label for="localidade">Localidade</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="localidade"
+            readonly
+          />
+        </div>
+        <div class="form-group">
+          <label for="uf">UF</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="uf"
+            readonly
+          />
+        </div>
+
+        <div class="consultar">
+          <button type="button" class="btn btn-primary" id="consulta">
+            Consultar CEP
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="src\main.js"></script>
+  </body>
+</html>
